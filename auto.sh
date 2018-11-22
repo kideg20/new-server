@@ -7,6 +7,7 @@ sudo yum install -y net-tools htop mc wget atop iostat iotop nicstat pgcenter ni
 sudo yum install -y zabbix-agent
 #---------------------------need's root
 #---------------edit .bachrc--------------------
+wget -P /home https://raw.githubusercontent.com/kideg20/new-server/master/root.txt
 echo "cat /home/root.txt" >> ~/.bashrc
 echo "alias l='ls -lahF --color=auto'" >> ~/.bashrc
 echo "alias vi='vim'" >> ~/.bashrc
