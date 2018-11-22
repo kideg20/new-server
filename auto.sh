@@ -20,7 +20,7 @@ echo "alias q='exit'" >> ~/.bashrc
 echo "alias netport='netstat -nape --inet'" >> ~/.bashrc
 echo "alias shutdownreboot='sudo shutdown -r now'" >> ~/.bashrc
 echo "alias shutdownpoweroff='sudo shutdown -h now'" >> ~/.bashrc
-. ~/.bashrc
+source ~/.bashrc
 #===================================================GRUB2 EDIT BOOT SCREEN======================================================
 sed -i 's/ rhgb quiet//' /etc/grub2.cfg
 #==============================
