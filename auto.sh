@@ -30,5 +30,10 @@ sudo sed -i 's/ServerActive=127.0.0.1/ServerActive=10.135.0.130/g' /etc/zabbix/z
 sudo sed -i 's/Hostname=Zabbix server/Hostname=VVD Test Tulpe Epak4/g' /etc/zabbix/zabbix_agentd.conf
 sudo systemctl start zabbix-agent
 #----------------------------
+sudo firewall-cmd --permanent --new-service=zabbix
+sudo firewall-cmd --permanent --service=zabbix --set-description="Allow zabbix server to connect to 10050/tcp"
 sudo firewall-cmd --permanent --zone=public --add-port=10050/tcp
+sudo firewall-cmd --permanent --service=zabbix --set-short=zabbix10050tcp
+sudo firewall-cmd --permanent --service=zabbix --add-port=10050/tcp
+sudo firewall-cmd --permanent --add-service=zabbix
 sudo firewall-cmd --reload
