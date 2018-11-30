@@ -3,7 +3,7 @@
 sudo yum update -y 
 sudo rpm -ivh https://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm
 sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-sudo yum install -y net-tools nfs-tools htop mc wget atop iostat iotop nicstat pgcenter nicstat perf mailx vim-enhanced tcpdump traceroute links
+sudo yum install -y net-tools nfs-utils htop mc wget atop iostat iotop nicstat pgcenter nicstat perf mailx vim-enhanced tcpdump traceroute links
 sudo yum install -y zabbix-agent
 #---------------------------need's root
 #---------------edit .bachrc--------------------
