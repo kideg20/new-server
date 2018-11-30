@@ -2,7 +2,7 @@
 #additional packeges
 #wget 
 #yum install wget
-#wget 
+#wget https://raw.githubusercontent.com/kideg20/new-server/master/auto.sh
 sudo yum update -y 
 sudo rpm -ivh https://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm
 sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
