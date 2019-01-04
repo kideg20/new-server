@@ -11,7 +11,7 @@ sudo yum install -y zabbix-agent
 #---------------------------need's root
 #---------------edit .bachrc--------------------
 wget -P /home/ https://raw.githubusercontent.com/kideg20/new-server/master/root.txt
-echo "cat /home/root.txt" >> ~/.bashrc
+#echo "cat /home/root.txt" >> ~/.bashrc
 echo "alias l='ls -lahF --color=auto'" >> ~/.bashrc
 echo "alias vi='vim'" >> ~/.bashrc
 echo "PS1='\[\033[01;31m\]\u@\h:\[\033[02;34m\]\w\$\[\033[00m\] '" >> ~/.bashrc
