@@ -3,6 +3,8 @@
 #wget 
 #yum install wget
 #wget https://raw.githubusercontent.com/kideg20/new-server/master/auto.sh
+#sudo chmod +x auto.sh
+#sudo ./auto.sh
 sudo yum update -y 
 sudo rpm -ivh https://repo.zabbix.com/zabbix/4.0/rhel/7/x86_64/zabbix-release-4.0-1.el7.noarch.rpm#zabbix 4.0
 #sudo rpm -ivh https://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-2.el7.noarch.rpm #zabbix 3.4
